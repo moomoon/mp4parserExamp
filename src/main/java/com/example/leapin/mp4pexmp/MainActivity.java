@@ -30,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 MP4Writer writer = new MP4Writer();
-                writer.addH264File(new MP4Writer.H264FileDescriptor(Environment.getExternalStorageDirectory() + File.separator + "encoded.h264", "eng", 30, 1));
+                writer.addH264File(new MP4Writer.H264FileDescriptor(Environment.getExternalStorageDirectory() + File.separator + "encoded.h264", "eng", 10, 1));
                 try {
                     Log.e("write test", "start");
                     writer.writeToMovieFile(Environment.getExternalStorageDirectory() + File.separator + "parsed.mp4");
